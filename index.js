@@ -20,7 +20,7 @@ const modeicon = document.getElementById("mode-icon");
 
 let darkMode = false;
 
-getUserData(url + "varchasva45");
+getUserData(url + "Shriprakashbharti");
 
 // fetches user info when submit is clicked
 btnsubmit.addEventListener("click", () => {
