@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!--Header-->
+        <header class="header">
+
+            <h1 class="title">DevDetective</h1>
+            <div class="btn-mode">
+                <p id="mode-text">DARK</p>
+                <img id="mode-icon" src="./images/moon-icon.svg">
+            </div>
+
+        </header>
+
+        <!--Profile-Content-->
+        <main>
+
+            <div class="main-container">
+
+                <!--Search Bar-->   
+                <div class="search-bar">
+                    <img src="./images/search-icon.svg" alt="" style="padding-left: 20px">
+                    <input type="search" name="user-input" id="input" placeholder="Enter a GitHub username..." data-searchInput>
+                    <button class="btn-search" type="submit" id="submit" data-searchInput>Search</button>
+                </div>
+
+                <div class="info-wrapper">
+
+                    <!--Info Container-->
+
+                    <div class="Info-Container">
+
+                        <div class="profile-info-wrapper">
+                            <img id="avatar">
+                            <div class="profile-name">
+                                <h2 id="name"></h2>
+                                <a href="#" target="_blank" rel="noopener noreferrer" id="user"></a>
+                            </div>
+                            <p id="date"></p>
+                        </div>
+
+                        <p id="bio"></p>
+                    
+
+
+                        <div class="profile-stats-wrapper">
+
+                            <div class="profile-stats">
+                                <p class="stat-title">Repos</p>
+                                <p class="stat-info" id="repos"></p>
+                            </div>
+
+                            <div class="profile-stats">
+                                <p class="stat-title">Followers</p>
+                                <p class="stat-info" id="followers"></p>
+                            </div>
+
+                            <div class="profile-stats">
+                                <p class="stat-title">Following</p>
+                                <p class="stat-info" id="following"></p>
+                            </div>
+
+                        </div>
+
+                        <div class="profile-links-wrapper" style="padding-top: 40px;">
+
+                            <div class="profile-links">
+                                <div class="bottom-icons">
+                                <img src="./images/location-icon.svg">
+                                </div>
+                                <p class="profile-links" id="location"></p>
+                            </div>
+
+                            <div class="profile-links" style="gap: 9px;">
+                                <div class="bottom-icons">
+                                    <img src="./images/website-icon.svg">
+                                </div>
+                                
+                                <a id="website">website</a>
+                            </div>
+
+                           
+
+                            <div class="profile-links">
+                                <div class="bottom-icons">
+                                    <img src="./images/company-icon.svg">
+                                </div>
+                               
+                                <p class="profile-links" id="company"></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+    
+
+            </div>
+
+        </main>
+       
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
