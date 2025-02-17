@@ -40,6 +40,7 @@ body {
 }
 
 
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -214,7 +215,100 @@ body {
   
   
   
-
+@media (max-width:780px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 313px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 36px;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .btn-mode {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80px;
+        letter-spacing: 2.5px;
+        color: var(--lm-text);
+        font-weight: bold;
+    }
+    #input {
+        border: none;
+        width: 70%;
+        outline: none;
+        background: none;
+        color: var(--lm-text);
+        padding-left: 40px;
+        font-size: 15px;
+    }
+    .btn-search {
+        min-width: 60px;
+        padding: 14px 26px;
+        background-color: var(--btn);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .profile-bio {
+        display: flex;
+        gap: 15px;
+        margin: 10px 10px;
+    }
+    
+    #avatar {
+        width: 60px;
+        border-radius: 50px;
+    }
+    
+    
+    .profile-info-wrapper h2{
+        font-size: 13px;
+        font-weight: bold;
+        color: var(--lm-text-alt);
+    }
+    
+    .profile-info-wrapper {
+        display: flex;
+        gap: 20px;
+    }
+    
+    #user {
+        color: var(--btn);
+        font-size: 12px;
+    }
+    .profile-links {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #location{
+        display: inline;
+        font-size: 10px;
+        gap: 5px;
+    }
+    #company{
+        display: inline;
+        font-size: 10px;
+        gap: 5px;
+    }
+}
 
 
 
